@@ -1,12 +1,30 @@
 
-import './App.css'
+import './styles/App.css'
+import './styles/index.css'
+
+
+import { Logo } from './components/Logo/Logo';
+import { Container } from './components/Container/Container';
+import { Heading } from './components/Heading/Heading';
+import { Menu } from './components/Menu/Menu';
+
 
 function App() {
 
 
   return (
     <>
-     <h1>Chronos-pomodoro</h1>
+    <Container>
+      <Heading>
+        <Logo />
+      </Heading>
+    </Container>
+       <Container>
+      <Heading>
+        <Menu/>
+      </Heading>
+
+    </Container>
     </>
   )
 }
