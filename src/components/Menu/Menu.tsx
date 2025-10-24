@@ -1,14 +1,23 @@
-import { TimerIcon } from 'lucide-react'
+import { HistoryIcon, HouseIcon, SettingsIcon, SunIcon  } from 'lucide-react'
 import styles from './Menu.module.css'
 
 
 export function Menu(){
     return(
-        <h1 className={styles.menu}>
-            <a href="#" className={styles.menuLink}>
-                <TimerIcon />
-                <span>Chronos</span>
+       <nav className={styles.menu}>
+            <a  className={styles.menuLink} href="#">
+                <HouseIcon />
             </a>
-        </h1>
+
+            <a  className={styles.menuLink} href="#">
+                <HistoryIcon />
+            </a>
+            <a className={styles.menuLink} href="#">
+                <SettingsIcon />
+            </a>
+            <a className={styles.menuLink} href="#">
+                <SunIcon />
+            </a>
+       </nav>
     )
 }
